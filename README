@@ -1,0 +1,15 @@
+Dupa rularea executabilului trivia jucatorului ii este afisat meniul principal.
+Acesta contine optiunea de new game si de quit. Au fost implementate cu ajutorul functiei printare
+care afisaza meniul la fiecare apelare. Optiunea selectata pe tot parcursul jocului este evidentiata
+cu un highlight care este doar un reverse. La selectarea optiunii new game este acoperit ecranul meniului cu ajutorul
+functii golire care creeaza un Windows nou dupa care il sterge. Se afiseaza timpul care este actualizat la fiecare apasare a unei taste valide
+in coltul din stanga sus. Jocul contine un Window cu intrebarea, unul cu punctajul si controalele si inca 4 care sunt intrebarile.
+La apasarea tastei q o variabila retine intrebarea la care se afla jucatorul dupa care acesta este transportat la meniul
+principal unde a devenit valabila optiunea de resume. In cazul selectarii acesteia este folosita variabila care a retinut
+intrebarea pentru a porni acolo si celelalte variabile (punctaj intrebari corecte gresite...) nu sunt reinitializate cu valori de inceput.
+In cazul apasarii tastei k se verifica daca este valabila optinuea prin variabila skip. Daca este valabila se sare peste o intrebare si se adauga 
+puncte ca si cum ar fi fost raspuns corect. Tasta h activeaza optiunea de ajutor daca este valabila. Este apelata functia ajut care acopera 2 
+intrebari in mod aleator dintre cele 3 gresite. In cazul in care raspunsurile acoperite sunt prea mari se mareste dimensiunea casutei de acoperire.
+Dupa parcurgerea tuturor intrebarilor este afisat ecranul final care contine numarul intrebarilor corecte, numarul celor gresite si punctajul final.
+Utilizatorul este apoi returnat in meniul principal.
+Structura unui fisier este: primul rand liber, al 2lea este cu intrebarea urmatoarele 4 cu raspunsurile si ultimul reprezinta raspunsul corect.
